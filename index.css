@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, rgba(230, 132, 87,1), #E6F2DD);
+}
+.container{
+  height: 80vh;
+  width: 600px;
+  border-radius: 35px;
+  background-color: #aa1c42c9;
+  border: 1px solid #E6F2DD;
+  backdrop-filter:blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content:space-around ;
+  padding: 20px;
+  flex-direction: column;
+  
+}
+.display{
+  width: 90%;
+  height: 20%;
+  background: #FFE8B4;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+.answers{
+  width: 90%;
+  background: #FFE8B4;;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.answerShow{
+  width: 90%;
+  background: #B1D3B9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#category{
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFE8B4;
+}
+#category option{
+  background:#FFE8B4 ;
+  color: black;
+}
+.h1{
+  display: flex;
+  flex-direction: column;
+}
+.h1 h1{
+  color: white;
+  margin-right: 20px;
+}
+.btn{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.inBtn{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  justify-content: center;
+}
+.inBtn button{
+  width: 30%;
+  height: 30px;
+  background: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 2px;
+  border: 2px solid ;
+  margin-left: 10px;
+
+}
+#next{
+  width: 50%;
+  background:#FFE8B4 ;
+  margin-bottom: 10px;
+  border-radius: 16px;
+}
+.inBtn button:active{
+  background: rgba(230, 242, 221,0.5);
+}
+@media(max-width:480px){
+  .answers{
+    flex-direction: column;
+    padding: 10px;
+  }
+  #category option {
+    font-size: small;
+    width: 150px;
+  }
+}
